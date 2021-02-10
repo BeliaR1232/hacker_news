@@ -59,6 +59,10 @@
 + curl -X GET 'http://127.0.0.1:8000/bookings/?limit=10&offset=10'
     + ответ: [{"id":11,"title":"Github1s – One second to read GitHub code with VS Code","url":"https://github.com/conwnet/github1s","date_created":"2021-02-10T09:28:10.243727Z"},...}]  
     
+Сортировка и получение подмножества одновременно:
++ + curl -X GET 'http://127.0.0.1:8000/bookings/?limit=10&offset=10&ordering=url'
+    + ответ: [{"id":11,"title":"Github1s – One second to read GitHub code with VS Code","url":"https://github.com/conwnet/github1s","date_created":"2021-02-10T09:28:10.243727Z"},...}] 
+    
 # Инструменты
 + [Redis](https://redis.io/)
 + [MySQL](https://www.mysql.com/)
